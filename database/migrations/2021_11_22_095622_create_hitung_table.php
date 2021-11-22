@@ -15,6 +15,10 @@ class CreateHitungTable extends Migration
     {
         Schema::create('hitung', function (Blueprint $table) {
             $table->id();
+            $table->integer('bil1');
+            $table->integer('bil2');
+            $table->string('operasi');
+            $table->integer('hasil');
             $table->timestamps();
         });
     }

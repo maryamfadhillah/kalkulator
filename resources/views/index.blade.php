@@ -9,7 +9,9 @@
 <body>
 <div>
     <h2>Kalkulator Sederhana</h2>
-    <form method="post" action="index.php">
+    <form method="post" action="{{ route('hitung') }}">
+        @method('POST')
+        @csrf
     <input type="text" name="bil1">
     <input type="text" name="bil2">
     <select name="operasi">
