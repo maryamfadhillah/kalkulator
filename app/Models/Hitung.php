@@ -13,6 +13,6 @@ class Hitung extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'bil1', 'bil2', 'operasi',
+        'bil1', 'bil2', 'operasi', 'hasil'
     ];
 }
